@@ -8,7 +8,7 @@
     "textColor": "text-black",
     "btnBg": "bg-[#191A23]",
     "btnText": "text-[#B9FF66]",
-    "btnIcon": "/icons/Icon01.svg"
+    "btnIcon": "/icons/01.svg"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "textColor": "text-black",
     "btnBg": "bg-[#191A23]",
     "btnText": "text-[#B9FF66]",
-    "btnIcon": "/icons/Icon01.svg"
+    "btnIcon": "/icons/01.svg"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "textColor": "text-black",
     "btnBg": "bg-[#FFFFFF]",
     "btnText": "text-[#191A23]",
-    "btnIcon": "/icons/Icon02.svg"
+    "btnIcon": "/icons/02.svg"
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "textColor": "text-black",
     "btnBg": "bg-[#191A23]",
     "btnText": "text-[#B9FF66]",
-    "btnIcon": "/icons/Icon01.svg"
+    "btnIcon": "/icons/01.svg"
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@
     "textColor": "text-black",
     "btnBg": "bg-[#191A23]",
     "btnText": "text-[#B9FF66]",
-    "btnIcon": "/icons/Icon01.svg"
+    "btnIcon": "/icons/01.svg"
   },
   {
     "id": 6,
@@ -63,7 +63,7 @@
     "textColor": "text-black",
     "btnBg": "bg-[#FFFFFF]",
     "btnText": "text-[#191A23]",
-    "btnIcon": "/icons/Icon02.svg"
+    "btnIcon": "/icons/01.svg"
   },
   {
     "id": 7,
@@ -71,6 +71,6 @@
     "bgColor": "bg-[#F3F3F3]",
     "buttonText": "Get your free proposal",
     "description": "Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.",
-    "icons":"/icons/9.svg"
+    "icons":"/icons/02.svg"
   }
 ]
