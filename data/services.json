@@ -1,0 +1,76 @@
+[
+  {
+    "id": 1,
+    "title": ["Search engine","optimization"],
+    "icons": "/icons/3.svg",
+    "bgColor": "bg-[#F3F3F3]",
+    "highlightColor":"bg-[#B9FF66]",
+    "textColor": "text-black",
+    "btnBg": "bg-[#191A23]",
+    "btnText": "text-[#B9FF66]",
+    "btnIcon": "/icons/Icon01.svg"
+  },
+  {
+    "id": 2,
+    "title": ["Pay-per-click","advertising"],
+    "icons": "/icons/4.svg",
+    "bgColor": "bg-[#B9FF66]",
+    "highlightColor": "bg-[#FFFFFF]",
+    "textColor": "text-black",
+    "btnBg": "bg-[#191A23]",
+    "btnText": "text-[#B9FF66]",
+    "btnIcon": "/icons/Icon01.svg"
+  },
+  {
+    "id": 3,
+    "title": ["Social Media ","Marketing"],
+    "icons": "/icons/5.svg",
+    "bgColor": "bg-[#191A23]",
+    "highlightColor": "bg-[#B9FF66]",
+    "textColor": "text-black",
+    "btnBg": "bg-[#FFFFFF]",
+    "btnText": "text-[#191A23]",
+    "btnIcon": "/icons/Icon02.svg"
+  },
+  {
+    "id": 4,
+    "title": ["Email","Marketing"],
+    "icons": "/icons/6.svg",
+    "bgColor": "bg-[#F3F3F3]",
+    "highlightColor": "bg-[#B9FF66]",
+    "textColor": "text-black",
+    "btnBg": "bg-[#191A23]",
+    "btnText": "text-[#B9FF66]",
+    "btnIcon": "/icons/Icon01.svg"
+  },
+  {
+    "id": 5,
+    "title": ["Content","Creation"],
+    "icons": "/icons/7.svg",
+    "bgColor": "bg-[#B9FF66]",
+    "highlightColor":"bg-[#FFFFFF]",
+    "textColor": "text-black",
+    "btnBg": "bg-[#191A23]",
+    "btnText": "text-[#B9FF66]",
+    "btnIcon": "/icons/Icon01.svg"
+  },
+  {
+    "id": 6,
+    "title": ["Analytics and","Tracking"],
+    "icons": "/icons/8.svg",
+    "bgColor": "bg-[#191A23]",
+    "highlightColor": "bg-[#B9FF66]",
+    "textColor": "text-black",
+    "btnBg": "bg-[#FFFFFF]",
+    "btnText": "text-[#191A23]",
+    "btnIcon": "/icons/Icon02.svg"
+  },
+  {
+    "id": 7,
+    "title": "Let’s make things happen",
+    "bgColor": "bg-[#F3F3F3]",
+    "buttonText": "Get your free proposal",
+    "description": "Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.",
+    "icons":"/icons/9.svg"
+  }
+]

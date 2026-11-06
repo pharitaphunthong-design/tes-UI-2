@@ -1,0 +1,32 @@
+[
+  {
+    "id": "01",
+    "title":"Consultation",
+    "description": "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."
+  },
+  {
+    "id": "02",
+    "title":"Research and Strategy Development",
+    "description":"Research and Strategy Development"
+  },
+  {
+    "id":"03",
+    "title":"Implementation",
+    "description":"Implementation"
+  },
+  {
+    "id":"04",
+    "title":"Monitoring and Optimization",
+    "description":"Monitoring and Optimization"
+  },
+  {
+    "id":"05",
+    "title":"Reporting and Communication",
+    "description":"Reporting and Communication"
+  },
+  {
+    "id":"06",
+    "title":"Continual Improvement",
+    "description":"Continual Improvement"
+  }
+]
