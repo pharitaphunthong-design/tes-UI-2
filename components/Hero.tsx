@@ -27,7 +27,6 @@ export default function Hero({
             {heroData.buttonText}
           </button>
         </div>
-
         <div className="lg:col-span-6 flex justify-center lg:justify-end items-center w-full">
           <img src={heroData.heroImage} alt="Hero Illustration" className="w-full h-auto object-contain max-w-lg lg:max-w-full"/>
         </div>

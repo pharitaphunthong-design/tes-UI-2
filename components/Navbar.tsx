@@ -1,11 +1,14 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import menuData from '@/data/menu.json';
+
 interface NavbarProps {
   logoText?: string;
   onQuoteClick?: () => void;
 }
+
 export default function Navbar({ logoText = "Positivus", onQuoteClick }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -19,8 +22,14 @@ export default function Navbar({ logoText = "Positivus", onQuoteClick }: NavbarP
       </div>
 
       <div className="hidden md:flex items-center gap-10 text-base text-gray-800 font-medium">
-        {menuData.map((item) => (
-          <a key={item.id} href={item.href} className="hover:text-black transition-colors">{item.label}</a>
+        {menuData.map((item: any) => (
+          <Link 
+            key={item.id} 
+            href={item.href || "#"} 
+            className="hover:text-black transition-colors"
+          >
+            {item.label}
+          </Link>
         ))}
       </div>
 
@@ -32,6 +41,7 @@ export default function Navbar({ logoText = "Positivus", onQuoteClick }: NavbarP
           Request a quote
         </button>
       </div>
+
       <button 
         onClick={() => setIsOpen(!isOpen)}
         className="md:hidden p-2 focus:outline-none"
@@ -45,20 +55,24 @@ export default function Navbar({ logoText = "Positivus", onQuoteClick }: NavbarP
           )}
         </svg>
       </button>
+
       {isOpen && (
         <div className="absolute top-full left-0 w-full bg-white shadow-md py-6 px-6 flex flex-col gap-4 md:hidden z-50 border-b border-gray-200">
-          {menuData.map((item) => (
-            <a 
+          {menuData.map((item: any) => (
+            <Link 
               key={item.id} 
-              href={item.href} 
+              href={item.href || "#"} 
               onClick={() => setIsOpen(false)}
               className="text-lg font-medium text-gray-800 hover:text-black"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
           <button 
-            onClick={onQuoteClick}
+            onClick={() => {
+              setIsOpen(false);
+              onQuoteClick?.();
+            }}
             className="w-full mt-2 px-5 py-3 border border-black rounded-2xl text-base font-medium text-black hover:bg-black hover:text-white transition-all shadow-sm"
           >
             Request a quote

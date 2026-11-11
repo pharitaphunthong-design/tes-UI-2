@@ -88,7 +88,6 @@ export default function Footer() {
               </Link>
             ))}
           </nav>
-
           <div className="flex items-center gap-3">
             {footerInfo.socials.map((social, index) => (
               <SocialIcon key={index} social={social as SocialItem} />
