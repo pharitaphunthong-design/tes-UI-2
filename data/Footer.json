@@ -1,6 +1,6 @@
 {
   "logoText": "Positivus",
-  "logoIcon": "/icons/icon11.svg",
+  "logoIcon": "/icons/logo1.svg",
   "navLinks": [
     { "label": "About us", "href": "#about" },
     { "label": "Services", "href": "#services" },
