@@ -121,7 +121,7 @@ export default function Services() {
   }
 
   return (
-    <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <section id="services" className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 scroll-mt-20">
       <div className="flex flex-col md:flex-row items-start md:items-center gap-4 sm:gap-6 mb-12 sm:mb-16">
         <div className="bg-[#B9FF66] px-4 py-1.5 rounded-lg">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black">

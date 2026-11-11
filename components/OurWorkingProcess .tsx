@@ -68,7 +68,7 @@ export default function OurWorkingProcess() {
   };
 
   return (
-    <section className="py-16 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto bg-white">
+    <section id="pricing" className="py-16 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto bg-white scroll-mt-20">
       <div className="flex flex-col md:flex-row md:items-center gap-6 mb-12">
         <div className="inline-block bg-[#B9FF66] px-4 py-1.5 rounded-md text-black font-semibold text-2xl md:text-3xl">
           Our Working Process

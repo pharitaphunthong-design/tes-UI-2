@@ -1,7 +1,7 @@
 [
-  { "id": 1, "label": "About us"},
-  { "id": 2, "label": "Services"},
-  { "id": 3, "label": "Use Cases"},
-  { "id": 4, "label": "Pricing"},
-  { "id": 5, "label": "Blog" }
+  { "id": 1, "label": "About us", "href": "#about" },
+  { "id": 2, "label": "Services", "href": "#services" },
+  { "id": 3, "label": "Use Cases", "href": "#case-studies" },
+  { "id": 4, "label": "Pricing", "href": "#pricing" },
+  { "id": 5, "label": "Blog", "href": "#blog" }
 ]
