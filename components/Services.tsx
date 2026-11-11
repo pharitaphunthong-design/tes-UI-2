@@ -23,20 +23,19 @@ interface ServiceCardProps {
 
 function ServiceCard({ service }: ServiceCardProps) {
   const isDark = service.bgColor === 'bg-[#191A23]';
-  
-  
   const titles = Array.isArray(service.title) ? service.title : [service.title];
 
   return (
     <div
-      className={`p-6 sm:p-8 md:p-10 rounded-[35px] sm:rounded-[45px] border border-black shadow-[0_5px_0_0_#191a23] flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 h-full ${service.bgColor}`}
+      className={`p-6 sm:p-8 md:p-10 rounded-[35px] sm:rounded-[45px] flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 h-full ${service.bgColor}`}
     >
       <div className="flex flex-col justify-between h-full min-h-[140px] sm:min-h-[160px]">
-        <div className="flex flex-col items-start gap-1">
+        
+        <div className="flex flex-col items-start gap-0">
           {titles.map((text, idx) => (
             <span
               key={idx}
-              className={`text-xl sm:text-2xl font-semibold px-2 py-0.5 rounded-md ${service.highlightColor} ${service.textColor}`}
+              className={`text-xl sm:text-2xl font-semibold px-2 py-0 rounded-md ${service.highlightColor} ${service.textColor}`}
             >
               {text}
             </span>
@@ -63,7 +62,7 @@ function ServiceCard({ service }: ServiceCardProps) {
         </div>
       </div>
 
-      <div className="relative w-28 h-28 sm:w-36 sm:h-36 flex-shrink-0 self-center sm:self-auto flex items-center justify-center">
+     <div className="relative w-36 h-36 sm:w-44 sm:h-44 flex-shrink-0 self-center sm:self-auto flex items-center justify-center">
         <div className="relative w-full h-full">
           <Image
             src={service.icons}
@@ -79,26 +78,26 @@ function ServiceCard({ service }: ServiceCardProps) {
 
 function CtaBanner({ data }: { data: ServiceItem }) {
   return (
-    <div className={`mt-16 sm:mt-20 ${data.bgColor} rounded-[35px] sm:rounded-[45px] p-8 sm:p-12 md:p-16 flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden border border-black shadow-[0_5px_0_0_#191a23]`}>
-      <div className="max-w-lg space-y-4 sm:space-y-6 z-10">
-        <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#191A23]">
+    <div className={`mt-16 sm:mt-20 ${data.bgColor} rounded-[35px] sm:rounded-[45px] p-8 sm:p-10 md:p-12 relative overflow-visible flex flex-col md:flex-row items-center justify-between`}>
+      <div className="max-w-md space-y-4 z-10">
+        <h3 className="text-2xl sm:text-3xl font-bold text-[#191A23]">
           {data.title}
         </h3>
         <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
           {data.description}
         </p>
-        <button className="bg-[#191A23] text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl sm:rounded-2xl text-sm sm:text-base font-medium hover:bg-gray-800 transition-colors shadow-md cursor-pointer">
+        <button className="bg-[#191A23] text-white px-6 sm:px-8 py-3.5 rounded-xl text-sm sm:text-base font-medium hover:bg-gray-800 transition-colors shadow-md cursor-pointer">
           {data.buttonText}
         </button>
       </div>
 
-          <div className="relative w-40 h-32 sm:w-52 sm:h-40 md:w-60 md:h-48 flex-shrink-0 self-center md:self-auto flex items-center justify-center">
-            <Image
-            src={data.icons}
-            alt={typeof data.title === 'string' ? data.title : 'CTA'}
-            fill
-            className="object-contain"
-            priority
+    <div className="relative w-64 h-64 sm:w-[320px] sm:h-[320px] md:absolute md:right-16 md:-bottom-8 lg:right-24 flex items-center justify-center pointer-events-none mt-6 md:mt-0 z-20">
+        <Image
+          src={data.icons}
+          alt={typeof data.title === 'string' ? data.title : 'CTA'}
+          fill
+          className="object-contain"
+          priority
         />
       </div>
     </div>

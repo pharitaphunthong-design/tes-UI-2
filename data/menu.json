@@ -1,7 +1,7 @@
 [
-  { "id": 1, "label": "About us" },
+  { "id": 1, "label": "About us"},
   { "id": 2, "label": "Services"},
   { "id": 3, "label": "Use Cases"},
   { "id": 4, "label": "Pricing"},
-  { "id": 5, "label": "Blog", "href": "#blog" }
+  { "id": 5, "label": "Blog" }
 ]

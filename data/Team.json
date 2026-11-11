@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "John Smith",
+    "role": "CEO and Founder",
+    "avatar": "/icons/10.svg",
+    "btnIcon": "/icons/icon6.svg",
+    "description": "10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy"
+  },
+  {
+    "id": 2,
+    "name": "Jane Doe",
+    "role": "Director of Operations",
+    "avatar": "/icons/11.svg",
+    "btnIcon": "/icons/icon6.svg",
+    "description": "7+ years of experience in project management and team leadership. Strong organizational and communication skills"
+  },
+  {
+    "id": 3,
+    "name":"Michael Brown",
+    "role":"Senior SEO Specialist",
+    "avatar":"/icons/12.svg",
+    "btnIcon":"/icons/icon6.svg",
+    "description":"5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization"
+  },
+  {
+    "id": 4,
+    "name":"Emily Johnson",
+    "role":"PPC Manager",
+    "avatar":"/icons/13.svg",
+    "btnIcon":"/icons/icon6.svg",
+    "description":"3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis"
+  },
+  {
+    "id": 5,
+    "name":"Brian Williams",
+    "role":"Social Media Specialist",
+    "avatar":"/icons/14.svg",
+    "btnIcon":"/icons/icon6.svg",
+    "description":"4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement"
+  },
+  {
+   "id": 6,
+    "name":"Sarah Kim",
+    "role":"Content Creator",
+    "avatar":"/icons/15.svg",
+    "btnIcon":"/icons/icon6.svg",
+    "description":"2+ years of experience in writing and editing Skilled in creating compelling, SEO-optimized content for various industries"
+  }
+]   

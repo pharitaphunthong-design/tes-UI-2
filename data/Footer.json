@@ -1,0 +1,31 @@
+{
+  "logoText": "Positivus",
+  "logoIcon": "/icons/icon11.svg",
+  "navLinks": [
+    { "label": "About us", "href": "#about" },
+    { "label": "Services", "href": "#services" },
+    { "label": "Use Cases", "href": "#use-cases" },
+    { "label": "Pricing", "href": "#pricing" },
+    { "label": "Blog", "href": "#blog" }
+  ],
+  "socials": [
+    { "name": "LinkedIn", "icon": "/icons/icon3.svg" },
+    { "name": "Facebook", "href": "#", "isSvg": true },
+    { "name": "Twitter", "icon": "/icons/icon5.svg" }
+  ],
+  "contact": {
+    "title": "Contact us:",
+    "email": "info@positivus.com",
+    "phone": "555-567-8901",
+    "address": "1234 Main St\nMoonstone City, Stardust State 12345"
+  },
+  "newsletter": {
+    "placeholder": "Email",
+    "buttonText": "Subscribe to news"
+  },
+  "copyright": "© 2023 Positivus. All Rights Reserved.",
+  "privacyPolicy": {
+    "label": "Privacy Policy",
+    "href": "/privacy"
+  }
+}
