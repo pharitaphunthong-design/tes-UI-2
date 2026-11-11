@@ -12,6 +12,12 @@ interface NavbarProps {
 export default function Navbar({ logoText = "Positivus", onQuoteClick }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleQuoteClick = () => {
+    if (onQuoteClick) {
+      onQuoteClick();
+    }
+  };
+
   return (
     <nav className="flex items-center justify-between py-6 px-4 md:px-12 max-w-7xl mx-auto relative">
       <div className="flex items-center gap-3">
@@ -32,14 +38,14 @@ export default function Navbar({ logoText = "Positivus", onQuoteClick }: NavbarP
           </Link>
         ))}
       </div>
-
       <div className="hidden md:block">
-        <button 
-          onClick={onQuoteClick}
-          className="px-5 py-3 border border-black rounded-2xl text-base font-medium text-black hover:bg-black hover:text-white transition-all shadow-sm"
+        <Link 
+          href="#contact"
+          onClick={handleQuoteClick}
+          className="inline-block px-5 py-3 border border-black rounded-2xl text-base font-medium text-black hover:bg-black hover:text-white transition-all shadow-sm"
         >
           Request a quote
-        </button>
+        </Link>
       </div>
 
       <button 
@@ -68,15 +74,16 @@ export default function Navbar({ logoText = "Positivus", onQuoteClick }: NavbarP
               {item.label}
             </Link>
           ))}
-          <button 
+          <Link 
+            href="#contact"
             onClick={() => {
               setIsOpen(false);
-              onQuoteClick?.();
+              handleQuoteClick();
             }}
-            className="w-full mt-2 px-5 py-3 border border-black rounded-2xl text-base font-medium text-black hover:bg-black hover:text-white transition-all shadow-sm"
+            className="w-full text-center mt-2 px-5 py-3 border border-black rounded-2xl text-base font-medium text-black hover:bg-black hover:text-white transition-all shadow-sm"
           >
             Request a quote
-          </button>
+          </Link>
         </div>
       )}
     </nav>

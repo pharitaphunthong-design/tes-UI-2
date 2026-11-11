@@ -1,18 +1,21 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+
 export interface ContactFormData {
   contactType: "hi" | "quote";
   name: string;
   email: string;
   message: string;
 }
+
 interface RadioOptionProps {
   id: "hi" | "quote";
   label: string;
   selectedType: "hi" | "quote";
   onChange: (type: "hi" | "quote") => void;
 }
+
 function RadioOption({ id, label, selectedType, onChange }: RadioOptionProps) {
   const isSelected = selectedType === id;
   return (
@@ -39,6 +42,7 @@ function RadioOption({ id, label, selectedType, onChange }: RadioOptionProps) {
     </label>
   );
 }
+
 interface InputFieldProps {
   label: string;
   id: string;
@@ -48,6 +52,7 @@ interface InputFieldProps {
   onChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
   isTextArea?: boolean;
 }
+
 function InputField({
   label,
   id,
@@ -88,6 +93,7 @@ function InputField({
     </div>
   );
 }
+
 export default function Contactus() {
   const [formData, setFormData] = useState<ContactFormData>({
     contactType: "hi",
@@ -95,6 +101,7 @@ export default function Contactus() {
     email: "",
     message: "",
   });
+
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -104,12 +111,14 @@ export default function Contactus() {
       [name]: value,
     }));
   };
+
   const handleTypeChange = (type: "hi" | "quote") => {
     setFormData((prev) => ({
       ...prev,
       contactType: type,
     }));
   };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Form Submitted:", formData);
@@ -121,8 +130,10 @@ export default function Contactus() {
       message: "",
     });
   };
+
   return (
-    <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    /* เพิ่ม id="contact" และ scroll-mt-20 ตรงนี้เรียบร้อยแล้วครับ */
+    <section id="contact" className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 scroll-mt-20">
       <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5 sm:gap-10 mb-10 sm:mb-14">
         <h2 className="bg-[#B9FF66] text-black text-3xl sm:text-4xl font-bold px-3 py-1 rounded-md">
           Contact Us

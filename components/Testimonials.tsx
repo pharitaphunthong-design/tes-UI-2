@@ -1,16 +1,19 @@
 "use client";
 import { useState, useEffect } from "react";
 import testimonialsData from "@/data/Testimonials.json";
+
 export interface TestimonialItem {
   id: number;
   quote: string;
   name: string;
   title: string;
 }
+
 interface TestimonialCardProps {
   item: TestimonialItem;
   position: "left" | "center" | "right";
 }
+
 function TestimonialCard({ item, position }: TestimonialCardProps) {
   const getPositionStyles = () => {
     switch (position) {
@@ -22,6 +25,7 @@ function TestimonialCard({ item, position }: TestimonialCardProps) {
         return "left-full -translate-x-[28%] lg:-translate-x-[32%] z-10 hidden md:block opacity-60 hover:opacity-100 transition-opacity";
     }
   };
+
   return (
     <div
       className={`absolute top-1/2 -translate-y-1/2 w-[85%] sm:w-[520px] md:w-[600px] transition-all duration-500 ease-in-out ${getPositionStyles()}`}
@@ -72,8 +76,9 @@ export default function Testimonials() {
   const nextIndex = (currentIndex + 1) % testimonials.length;
   const isAtFirst = currentIndex === 0;
   const isAtLast = currentIndex === testimonials.length - 1;
+
   return (
-    <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <section id="blog" className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 scroll-mt-20">
       <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5 sm:gap-10 mb-12 sm:mb-16">
         <h2 className="bg-[#B9FF66] text-black text-3xl sm:text-4xl font-bold px-3 py-1 rounded-md">
           Testimonials
@@ -142,7 +147,6 @@ export default function Testimonials() {
             ))}
           </div>
 
-   
           <button
             onClick={handleNext}
             disabled={isAtLast}
@@ -168,7 +172,6 @@ export default function Testimonials() {
               }}
             />
           </button>
-
         </div>
       </div>
     </section>
